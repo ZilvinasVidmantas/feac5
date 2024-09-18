@@ -1,4 +1,4 @@
-# Namų darbų poateikimo tvarka
+# Namų darbų pateikimo tvarka
 
 Pastaba: 1. ir 2. žingsnius galite praleisti, jei jau turite repozitoriją
 
