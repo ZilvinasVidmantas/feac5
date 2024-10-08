@@ -80,12 +80,11 @@ Kiekvienas iš komandos narių turi susiurti atskirą šaką, kurioje atliks sav
   12. Sulaukę kolegos žinutės (per teams), kad buvo atliktas patikrinimas:
     1. Jeigu nėra komentarų, spaudžiate merge branch 
     2. Jeigu yra problemų, jas išsprendžiate IR KARTOJE PUNTUS 3, 4, 5, 6, 8
-  13. Ištrinate šaką globaliai ir lokaliai:
-    * lokaliai: 
+  13. Ištrinate šaką lokaliai:
       ```
         git branch -d nauja-šaka
       ```
-  14. Ištrinkite šaką naudodami github.com puslapiu
+  14. Ištrinkite šaką naudodamiesi github.com puslapiu
   15. kanban.com perkeliate darbą į skiltį "Done"
 
 
