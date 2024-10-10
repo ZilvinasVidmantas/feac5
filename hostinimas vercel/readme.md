@@ -12,9 +12,11 @@ Deploy'insim kiekvieną iš aplikacijų atskirai ir įgalinsime jų bendradarbia
 ### Repozitorijos parsiuntimas
 
 * pasikopijuokite repozitorijos adresą
+
 ![alt text](image-5.png)
 
 * parsisiųskite repozitoriją naudodami terminalą
+
 ```
 git clone repozitorijos_adresas
 ```
@@ -41,7 +43,6 @@ vercel login
 1. Įsirašykite visas reikiamas bibliotekas
 ```
 npm i 
-
 ```
 
 2. Įgalinkite statinių failų dalinimasi ir pridėkite pradinį html failą
@@ -141,13 +142,68 @@ Visuose žingsniuose pasirinkite default reikšmes spausdami "Enter"
 Peržiūrėkite savo aplikaciją pasirinkdami __pagrindinį__ domain'ą:
 ![alt text](image-7.png)
 
+## Vite/React aplikacijos deploy'inimas
 
+1. Įsirašykite visas biliotekas
+```
+npm i
+```
 
+2. Sukurkite aplinkos kintamajį faile frontend/.env, kuris rodytų į backend'o pa'deploy'intą aplikaciją
+```
+VITE_SERVER_URL=https://backend-rosy-sigma.vercel.app/
+```
 
+3. Panaudokite aplinkos kintamajį axios instance'ui:
+frontend\src\config\axios.ts
+```ts
+...
+const baseURL = PROD ? import.meta.env.VITE_SERVER_URL : "http://localhost:3000/";
 
+const config: AxiosRequestConfig = {
+  baseURL,
+};
+...
+```
 
+4. Sukurkite komandą deploy'inimui frontend/package.json
 
+```js
+// frontend/package.json
+{
+  ...
 
+  "scripts": {
+    ...
+    "deploy": "npm run build && vercel --prod"
+  },
+  ...
+}
+```
 
+5. Padeployinkite aplikaciją:
 
+```
+npm run deploy
+```
 
+6. Atsidarykite deploy'mento puslapį:
+![alt text](image-9.png)
+![alt text](image-10.png)
+
+## CORS apsauga
+
+1. Nukopijuokite Vite/React aplikacijos __pagrindinį__ adresą.
+2. Pakeiskite backend/src/index.ts cors nustatymus
+```ts
+...
+app.use(cors({
+  origin: 'https://frontend-zeta-brown-96.vercel.app',
+}));
+...
+```
+3. Pa'deploy'inkite node.express aplikaciją iš naujo
+
+```
+npm run deploy
+```
