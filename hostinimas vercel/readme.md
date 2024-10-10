@@ -110,10 +110,8 @@ app.use(express.static(path.join(__dirname, "../", "public")));
   *   "src": nurodo, kad visi užklausų maršrutai (URL) turėtų būti apdorojami pagal šį pattern'ą.
   *   "dest": nurodo, kad visi užklausų prašymai turėtų būti nukreipti į "dist/index.js" failą.
 
-4. Įrašykite biblioteką @vercel/node"
-```
-npm i -D @vercel/node
-```
+4. Pagal .env.example užpildykite aplinkos kintamuosius
+
 
 5. Sukurkite komandą su'build'inti projektą package.json
 ```js
