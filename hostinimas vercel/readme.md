@@ -6,14 +6,14 @@ Deploy'insim kiekvieną iš aplikacijų atskirai ir įgalinsime jų bendradarbia
 ## Repozitorijos sukūrimas
 
 ### Pasi'fork'inkite [repozitoriją](https://github.com/rokasandreikenas/home-service-app-heroku) 
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](https://i.postimg.cc/cJpDsdx3/image-1.png)
+![alt text](https://i.postimg.cc/5NsnXB9b/image-10.png)
 
 ### Repozitorijos parsiuntimas
 
 * pasikopijuokite repozitorijos adresą
 
-![alt text](image-5.png)
+![alt text](https://i.postimg.cc/nrZ0DTQc/image-5.png)
 
 * parsisiųskite repozitoriją naudodami terminalą
 
@@ -34,7 +34,7 @@ npm i -g vercel
 ```
 vercel login
 ```
-![alt text](image-3.png)
+![alt text](https://i.postimg.cc/vZSqNWC3/image-3.png)
 
 * Atlikite prisijungimą naršyklėje
 
@@ -135,10 +135,10 @@ npm run deploy
 Visuose žingsniuose pasirinkite default reikšmes spausdami "Enter"
 
 Įvykus deploy'inimui nunaviguokite į deployment'o peržvalgos puslapį:
-![alt text](image-4.png)
+![alt text](https://i.postimg.cc/NfsdGJcd/image-4.png)
 
 Peržiūrėkite savo aplikaciją pasirinkdami __pagrindinį__ domain'ą:
-![alt text](image-7.png)
+![alt text](https://i.postimg.cc/Y038fg1N/image-7.png)
 
 ## Vite/React aplikacijos deploy'inimas
 
@@ -186,8 +186,8 @@ npm run deploy
 ```
 
 6. Atsidarykite deploy'mento puslapį:
-![alt text](image-9.png)
-![alt text](image-10.png)
+![alt text](https://i.postimg.cc/sf9nrFtB/image-9.png)
+![alt text](https://i.postimg.cc/5NsnXB9b/image-10.png)
 
 ## CORS apsauga
 
